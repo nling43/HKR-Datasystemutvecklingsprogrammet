@@ -17,9 +17,9 @@ When calculating the price of the ticket the following costs shall be used:
 
 The travel company insists that the last output shall look like an actual receipt, an example of this can be seen below:
 
-Receipt:
-Ticket : 2000kr
-Bag    :  200kr
-Meal   :  150kr
-        -------
-Total  : 2350kr
+        Receipt:
+                Ticket : 2000kr
+                Bag    :  200kr
+                Meal   :  150kr
+                -------
+                Total  : 2350kr
