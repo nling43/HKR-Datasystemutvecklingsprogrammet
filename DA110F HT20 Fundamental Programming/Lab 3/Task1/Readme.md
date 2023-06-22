@@ -3,19 +3,19 @@ A lot of police investigations start off by examining where the potential suspec
 
 The script shall work as follows:
 
-(Step 1) Start the script
-(Step 2) Provide one or more paths to files with phone numbers
-(Step 3) The script finds out what phone numbers occur in all files
-(Step 4) The script looks up who owns the phone numbers found
-(Step 5) The script displays the found names
+        (Step 1) Start the script
+        (Step 2) Provide one or more paths to files with phone numbers
+        (Step 3) The script finds out what phone numbers occur in all files
+        (Step 4) The script looks up who owns the phone numbers found
+        (Step 5) The script displays the found names
 
 To break it all down a little bit further this is what should happen during each step.
 
-        When starting the script, a path to a file that contains the mapping between name and number shall be given as a command line argument. This file shall contain a pickled dictionary on the following format {‘0709-12345’: ‘Anna’}.
-        To be able to provide an arbitrary number of files a menu is needed. The menu shall have the following options: 1. Add file and 2. Calculate. All file paths added shall be saved in a list for later use.
-        This step is part of the menu option 2. Calculate. The script shall cross reference the numbers in all the files provided and create a Set with the ones that occur in all files. The files with the phone numbers store one phone number per line and is saved as a regular text file.
-        This step is part of the menu option 2. Calculate. Using the Set of found numbers the script looks up the owner’s names using the file sent as a command line argument. The names shall be saved in a list.
-        All the found names located in the set from Step 4 is displayed on the screen.
+When starting the script, a path to a file that contains the mapping between name and number shall be given as a command line argument. This file shall contain a pickled dictionary on the following format {‘0709-12345’: ‘Anna’}.
+To be able to provide an arbitrary number of files a menu is needed. The menu shall have the following options: 1. Add file and 2. Calculate. All file paths added shall be saved in a list for later use.
+This step is part of the menu option 2. Calculate. The script shall cross reference the numbers in all the files provided and create a Set with the ones that occur in all files. The files with the phone numbers store one phone number per line and is saved as a regular text file.
+This step is part of the menu option 2. Calculate. Using the Set of found numbers the script looks up the owner’s names using the file sent as a command line argument. The names shall be saved in a list.
+All the found names located in the set from Step 4 is displayed on the screen.
 
 To solve task the student must make use of a main function and also implement the following functions:
 
@@ -34,17 +34,17 @@ This function shall match each number from the Set numbers to a name and store t
 display_suspects(names)
 As the name of the function suggests this function shall display the names of all suspects sent to the function as a list of strings. The format shall be as shown here:
 
-The following persons was present on all crime scenes:
-------------------------------------------------------
-Max Olsson
-Zara Walthersson
-Unknown (0703-23464)
+        The following persons was present on all crime scenes:
+        ------------------------------------------------------
+        Max Olsson
+        Zara Walthersson
+        Unknown (0703-23464)
 
 If the list sent as a parameter is empty the following message shall be shown:
 
-## The following persons was present on all crime scenes:
+        ## The following persons was present on all crime scenes:
 
-No matches
+        No matches
 
 Make sure to include error handling that displays the following message to the user if the file given as command line arguments or the files specified while running the script are not valid:
 
