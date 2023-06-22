@@ -1,0 +1,8 @@
+Task description
+You have been placed in a pitch-black labyrinth, without knowing if there is a way out or not. Maybe there are traps? The only option available is to walk in a random direction and hope for the best, hope that you do not walk into a wall, or even worse, that you walk in circles. But hurry up, you only have so many moves…
+
+The text above is the premise for what you shall create in this task. Develop a script that allow the user to move around the labyrinth detailed below. The goal is, of course, to reach the exit but we want to make it hard and claustrophobic to do so. The user shall get very little information while in the labyrinth, remember, it is pitch-black down there.
+
+The only information given to the user shall be the initial message we saw in the first paragraph, and some instructions how to move around the labyrinth (w=up, a=left, s=down, and d=right). But after the users starts to move about in the labyrinth, the only messages shall be if the user lands on a trap (“Oh no, a trap!”), grabs a power-up (“A chocolate bar, I feel stronger.”), or runs into a wall (“Ouch! I can not walk through walls…”). Should the user reach the exit the message “You survived! Well done adventurer!” shall be displayed, but if the user does not manage to reach the exit in time the message “Game over! You did not reach the exit in time.”.
+
+The user shall start with 20 moves left before they are game over. Each time they move this shall decrease by one, but at no time shall the user be informed about how many moves they have left. They only know what the initial message told them, that they have to hurry.
